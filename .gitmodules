@@ -1,0 +1,6 @@
+[submodule "ubistart-frontend-challenge"]
+	path = ubistart-frontend-challenge
+	url = git@github.com:brtmvdl/ubistart-frontend-challenge.git
+[submodule "ubistart-backend-challenge"]
+	path = ubistart-backend-challenge
+	url = git@github.com:brtmvdl/ubistart-backend-challenge.git
