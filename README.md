@@ -32,9 +32,9 @@ Desafio Fullstack para a vaga da [UBISTART](https://www.ubistart.com/)
 
 ```sh
 # Installing Docker and others
-sudo apt update -y 
-sudo apt install -y docker-compose git nano 
-sudo systemctl enable docker 
+sudo apt update -y
+sudo apt install -y docker-compose git nano
+sudo systemctl enable docker
 
 # Downloading project files
 git clone https://github.com/brtmvdl/ubistart-challenge
@@ -42,14 +42,9 @@ cd ubistart-challenge/
 git clone https://github.com/brtmvdl/ubistart-backend-challenge
 git clone https://github.com/brtmvdl/ubistart-frontend-challenge
 
-# Setting up server IP address
-IP_ADDRESS=<server IP address>
-cat ./ubistart-frontend-challenge/src/utils/ajax.js | sed -e "s/0.0.0.0/${IP_ADDRESS}/" > ./ajax.js
-cp -rfv ./ajax.js ./ubistart-frontend-challenge/src/utils/ajax.js
-
 # Setting up the project
-sudo docker-compose -f ./docker-compose.yaml run app npm ci
-bash ./env/up.sh 
+bash ./env/install.sh
+bash ./env/up.sh
 ```
 
 ## License
