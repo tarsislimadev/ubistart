@@ -10,6 +10,6 @@ RUN git clone https://github.com/brtmvdl/ubistart-backend-challenge
 
 RUN git clone https://github.com/brtmvdl/ubistart-frontend-challenge
 
-RUN sh /app/ubistart-challenge/env/docker/install.sh
+RUN sh /app/ubistart-challenge/env/staging/install.sh
 
-CMD sh /app/ubistart-challenge/env/docker/up.sh
+CMD sh /app/ubistart-challenge/env/staging/up.sh
