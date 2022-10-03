@@ -27,5 +27,8 @@ jobs:
         name: Build and Tag
         run: sh ./env/production/build.sh
       -
+        name: Build and Tag
+        run: sh ./env/production/pushing.sh
+      -
         name: Push
         run: docker push tmvdl/challenges -a
