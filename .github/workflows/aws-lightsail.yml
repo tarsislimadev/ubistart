@@ -1,4 +1,4 @@
-name: Pushing to Docker Hub
+name: Pushing to AWS Lightsail
 
 on:
   schedule:
