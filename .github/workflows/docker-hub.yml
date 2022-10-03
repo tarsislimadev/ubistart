@@ -25,10 +25,7 @@ jobs:
           password: ${{ secrets.GITHUBDOCKER }}
       -
         name: Build and Tag
-        run: sh ./env/production/build.sh
+        run: docker build --network host --no-cache -t tmvdl/challenges:ubistart .
       -
         name: Build and Tag
-        run: sh ./env/production/pushing.sh
-      -
-        name: Push
-        run: docker push tmvdl/challenges -a
+        run: docker push tmvdl/challenges:ubistart
