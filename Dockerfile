@@ -2,14 +2,14 @@ FROM docker:git
 
 WORKDIR /app
 
-RUN git clone https://github.com/brtmvdl/ubistart-challenge
+COPY . .
 
-WORKDIR /app/ubistart-challenge
+# RUN git clone https://github.com/brtmvdl/ubistart-backend-challenge
 
-RUN git clone https://github.com/brtmvdl/ubistart-backend-challenge
+# RUN git clone https://github.com/brtmvdl/ubistart-frontend-challenge
 
-RUN git clone https://github.com/brtmvdl/ubistart-frontend-challenge
+# RUN docker-compose -f ./docker-compose.yaml run app npm ci
 
-RUN sh /app/ubistart-challenge/env/staging/install.sh
+CMD bash ./env/staging/up.sh
 
-CMD sh /app/ubistart-challenge/env/staging/up.sh
+# CMD docker-compose -f ./docker-compose.yaml up -d --remove-orphans --force-recreate --build
