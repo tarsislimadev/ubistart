@@ -3,6 +3,10 @@ name: Pushing to Docker Hub
 on:
   schedule:
     - cron: '55 * * * *'
+  push:
+    branches:
+      - 'main'
+      - 'master'
 
 jobs:
   docker:
