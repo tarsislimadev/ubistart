@@ -1,11 +1,8 @@
-name: Pushing to Docker Hub
+name: Push to Docker Hub
 
 on:
-  schedule:
-    - cron: '55 * * * *'
   push:
     branches:
-      - 'main'
       - 'master'
 
 jobs:
@@ -13,23 +10,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - 
-        name: Check out repository code
+        name: Checkout
         uses: actions/checkout@v2
       -
-        name: Set up QEMU
-        uses: docker/setup-qemu-action@v1
-      -
-        name: Set up Docker Buildx
+        name: Set up BuildX action
         uses: docker/setup-buildx-action@v1
       -
-        name: Login to DockerHub
+        name: Docker Hub Login
         uses: docker/login-action@v1 
         with:
           username: tmvdl
           password: ${{ secrets.GITHUBDOCKER }}
       -
-        name: Build and Tag
+        name: Docker Build
         run: docker build --network host --no-cache -t tmvdl/challenges:ubistart .
       -
-        name: Build and Tag
+        name: Docker Tag
         run: docker push tmvdl/challenges:ubistart
