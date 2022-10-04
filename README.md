@@ -43,8 +43,7 @@ git clone https://github.com/brtmvdl/ubistart-backend-challenge
 git clone https://github.com/brtmvdl/ubistart-frontend-challenge
 
 # Setting up the project
-bash ./env/install.sh
-bash ./env/up.sh
+sh ./env/production/up.sh 
 ```
 
 ## License
