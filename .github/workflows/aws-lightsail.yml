@@ -1,11 +1,8 @@
-name: Pushing to AWS Lightsail
+name: Deploy at AWS Lightsail
 
 on:
-  schedule:
-    - cron: '45 * * * *'
   push:
     branches:
-      - 'main'
       - 'master'
 
 jobs:
@@ -30,7 +27,7 @@ jobs:
           aws-region: us-east-1
       - run: docker pull tmvdl/challenges:ubistart
       - run: curl "https://s3.us-west-2.amazonaws.com/lightsailctl/latest/linux-amd64/lightsailctl" -o "/usr/local/bin/lightsailctl"
-      - run: sudo chmod +x /usr/local/bin/lightsailctl
+      - run: chmod +x /usr/local/bin/lightsailctl
       -
         name: Pushing
         run: aws lightsail push-container-image --region us-east-1 --service-name ubistart-docker-1 --label tmvdl/challenges --image tmvdl/challenges:ubistart
