@@ -26,6 +26,14 @@ Desafio Fullstack para a vaga da [UBISTART](https://www.ubistart.com/)
 
 [x] CRUD de tarefas (admin)
 
+## Configuração em produção
+
+[Configuração](https://youtu.be/TUL7V2LVIIw)
+
+[Usuário](https://youtu.be/Pb0keibvBB4)
+
+[Admin](https://youtu.be/33zDqFT6JHw)
+
 ## Para configurar na [AWS Lightsail](https://aws.amazon.com/pt/lightsail/)
 
 * A porta 3000 da maquina precisa estar disponível para a internet.
