@@ -1,1 +1,1 @@
-docker build --network host --no-cache -t tmvdl/challenges:ubistart .
+sudo docker build --network host --no-cache -t tmvdl/challenges:ubistart .
