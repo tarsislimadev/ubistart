@@ -1,11 +1,9 @@
 ## CI/CD
 
-[ ] Docker Hub - new image (tmvdl/challenges)
+[x] Setup GITHUBDOCKER in GitHub secrets
 
-[ ] AWS Pipeline (ou Github Actions)
+[x] Docker Hub - new image (tmvdl/challenges)
 
-[ ] AWS ECR (ou Docker Hub)
+[x] Docker Hub - push image using GitHub Actions
 
-[ ] AWS LightSail - Container Services
-
-[ ] Setup GITHUBDOCKER in GitHub secrets
+[ ] AWS LightSail - deploy container service using GitHub Actions
