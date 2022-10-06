@@ -40,9 +40,9 @@ Desafio Fullstack para a vaga da [UBISTART](https://www.ubistart.com/)
 
 ```sh
 # Installing Docker and others
-apt update -y
-apt install -y docker-compose git nano
-systemctl enable docker
+sudo apt update -y
+sudo apt install -y docker-compose git nano
+sudo systemctl enable docker
 
 # Downloading project files
 git clone https://github.com/brtmvdl/ubistart-challenge
