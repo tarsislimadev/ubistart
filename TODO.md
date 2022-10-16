@@ -7,3 +7,7 @@
 [x] Docker Hub - push image using GitHub Actions
 
 [ ] AWS LightSail - deploy container service using GitHub Actions
+
+## Tests
+
+[ ] testing library react
