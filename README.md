@@ -6,7 +6,7 @@ Desafio Fullstack para a vaga da [UBISTART](https://www.ubistart.com/)
 
 [Back-end](https://github.com/brtmvdl/ubistart-backend-challenge)
 
-## Tecnologias
+## Stack
 
 [React.js](https://reactjs.org/)
 
@@ -18,13 +18,13 @@ Desafio Fullstack para a vaga da [UBISTART](https://www.ubistart.com/)
 
 ## Estórias
 
-[x] Cadastro da usuário (com e-mail e senha)
+- [x] Cadastro da usuário (com e-mail e senha)
 
-[x] Entrada (com e-mail e senha)
+- [x] Entrada (com e-mail e senha)
 
-[x] CRUD de tarefas
+- [x] CRUD de tarefas
 
-[x] CRUD de tarefas (admin)
+- [x] CRUD de tarefas (admin)
 
 ## Configuração em produção
 
@@ -34,7 +34,7 @@ Desafio Fullstack para a vaga da [UBISTART](https://www.ubistart.com/)
 
 [Admin](https://youtu.be/33zDqFT6JHw)
 
-## Para configurar na [AWS Lightsail](https://aws.amazon.com/pt/lightsail/)
+## Como configurar na [AWS Lightsail](https://aws.amazon.com/pt/lightsail/)
 
 * A porta 3000 da maquina precisa estar disponível para a internet.
 
@@ -42,7 +42,7 @@ Desafio Fullstack para a vaga da [UBISTART](https://www.ubistart.com/)
 # Installing Docker and others
 sudo apt update -y
 sudo apt install -y docker-compose git nano
-sudo systemctl enable docker
+sudo sysctl enable docker
 
 # Downloading project files
 git clone https://github.com/brtmvdl/ubistart-challenge
