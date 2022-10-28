@@ -1,6 +1,6 @@
 # Desafio Ubistart
 
-Desafio Fullstack para a vaga da [UBISTART](https://www.ubistart.com/)
+Para o desafio FullStack da [UBISTART](https://www.ubistart.com/)
 
 [Front-end](https://github.com/brtmvdl/ubistart-frontend-challenge)
 
