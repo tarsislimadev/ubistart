@@ -4,75 +4,75 @@ services:
 
   app:
     hostname: app
-    build: './ubistart-frontend-challenge'
+    build: './src/front'
     volumes:
-      - './ubistart-frontend-challenge:/app'
+      - './src/front:/app'
     ports:
       - '80:3000'
 
   api:
     hostname: api
-    build: './ubistart-backend-challenge/src/api'
+    build: './src/back/api'
     restart: always
     ports: 
       - '3000:80'
 
   api_users_login:
     hostname: api_users_login
-    build: './ubistart-backend-challenge/src/users-login'
+    build: './src/back/users-login'
     restart: always
     volumes:
-      - './ubistart-backend-challenge/src/users-login:/challenge/app'
-      - './ubistart-backend-challenge/src/commons:/challenge/commons'
+      - './src/back/users-login:/challenge/app'
+      - './src/back/commons:/challenge/commons'
       - './data:/data'
       - './logs:/logs'
 
   api_users_register:
     hostname: api_users_register
-    build: './ubistart-backend-challenge/src/users-register'
+    build: './src/back/users-register'
     restart: always
     volumes:
-      - './ubistart-backend-challenge/src/users-register:/challenge/app'
-      - './ubistart-backend-challenge/src/commons:/challenge/commons'
+      - './src/back/users-register:/challenge/app'
+      - './src/back/commons:/challenge/commons'
       - './data:/data'
       - './logs:/logs'
 
   api_tasks_list:
     hostname: 'api_tasks_list'
-    build: './ubistart-backend-challenge/src/tasks-list/'
+    build: './src/back/tasks-list/'
     restart: always
     volumes:
-      - './ubistart-backend-challenge/src/tasks-list/:/challenge/app'
-      - './ubistart-backend-challenge/src/commons/:/challenge/commons'
+      - './src/back/tasks-list/:/challenge/app'
+      - './src/back/commons/:/challenge/commons'
       - './data:/data'
       - './logs:/logs'
 
   api_tasks_create:
     hostname: 'api_tasks_create'
-    build: './ubistart-backend-challenge/src/tasks-create/'
+    build: './src/back/tasks-create/'
     restart: always
     volumes:
-      - './ubistart-backend-challenge/src/tasks-create/:/challenge/app'
-      - './ubistart-backend-challenge/src/commons/:/challenge/commons'
+      - './src/back/tasks-create/:/challenge/app'
+      - './src/back/commons/:/challenge/commons'
       - './data:/data'
       - './logs:/logs'
 
   api_tasks_update:
     hostname: 'api_tasks_update'
-    build: './ubistart-backend-challenge/src/tasks-update/'
+    build: './src/back/tasks-update/'
     restart: always
     volumes:
-      - './ubistart-backend-challenge/src/tasks-update/:/challenge/app'
-      - './ubistart-backend-challenge/src/commons/:/challenge/commons'
+      - './src/back/tasks-update/:/challenge/app'
+      - './src/back/commons/:/challenge/commons'
       - './data:/data'
       - './logs:/logs'
 
   api_tasks_finish:
     hostname: 'api_tasks_finish'
-    build: './ubistart-backend-challenge/src/tasks-finish/'
+    build: './src/back/tasks-finish/'
     restart: always
     volumes:
-      - './ubistart-backend-challenge/src/tasks-finish/:/challenge/app'
-      - './ubistart-backend-challenge/src/commons/:/challenge/commons'
+      - './src/back/tasks-finish/:/challenge/app'
+      - './src/back/commons/:/challenge/commons'
       - './data:/data'
       - './logs:/logs'

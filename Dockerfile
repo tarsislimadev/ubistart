@@ -4,8 +4,8 @@ WORKDIR /app
 
 COPY . .
 
-RUN git clone https://github.com/brtmvdl/ubistart-backend-challenge
+RUN sh env/pull.sh
 
-RUN git clone https://github.com/brtmvdl/ubistart-frontend-challenge
+RUN sh env/install.sh
 
-CMD sh ./env/production/up.sh
+CMD sh env/up.sh
